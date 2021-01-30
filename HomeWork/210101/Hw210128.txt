@@ -1,0 +1,9 @@
+- 학습 목표 달성 확인 목록
+    - [] CRUD 를 구현할 수 있는가?
+        : Create, Retrieve/Read, Update, Delete
+    - [] 리팩토링 기법 중에서 `extract method`와 `replace temp with query`의 의미를 이해하는가?
+        : extract method 는 그룹으로 함께 묶을 수 있는 코드 조각이 있으면 코드의 목적이 잘 드러나도록
+          메서드의 이름을 지어 별도의 메서드로 뽑아낸다.
+          replace temp with query 는 어떤 수식의 결과값을 저장하기 위해서 임시변수를 사용하고 있다면
+          수식을 뽑아내서 메서드로 만들고, 임시변수를 참조하는 곳을 찾아 모두 메서드 호출로 바꾼다.
+          새로 만든 메서드는 다른 메서드에서도 사용될 수 있다.
