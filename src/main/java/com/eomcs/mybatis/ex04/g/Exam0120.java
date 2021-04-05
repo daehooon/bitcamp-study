@@ -1,24 +1,31 @@
-// #{} 과 ${} 차이점 => #{} 문법의 한계
-package com.eomcs.mybatis.ex03.f;
+// bind 태그 사용법 - 사용 후
+package com.eomcs.mybatis.ex04.g;
 
 import java.util.List;
+import java.util.Scanner;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import com.eomcs.mybatis.vo.Board;
 
-public class Exam0110 {
+public class Exam0120 {
 
   public static void main(String[] args) throws Exception {
-    SqlSession sqlSession = new SqlSessionFactoryBuilder().build(Resources.getResourceAsStream(
-        "com/eomcs/mybatis/ex03/f/mybatis-config.xml")).openSession();
 
-    // 정렬 방식을 파라미터로 넘기기
-    // => #{} 문법은 오직 값만 삽입할 수 있다.
-    // => SQL 코드를 삽입할 수 없다.
-    // => 파라미터 값을 SQL에 그대로 삽입하려면
-    //    ${} 문법을 사용해야 한다.
-    List<Board> boards = sqlSession.selectList("BoardMapper.selectBoard1", "desc");
+    Scanner keyboard = new Scanner(System.in);
+
+    System.out.print("검색어? ");
+    String keyword = keyboard.nextLine();
+
+    keyboard.close();
+
+    SqlSession sqlSession = new SqlSessionFactoryBuilder().build(Resources.getResourceAsStream(
+        "com/eomcs/mybatis/ex04/g/mybatis-config.xml")).openSession();
+
+    // 메서드를 실행할 때 넘겨준 값으로 
+    // mybatis 는 <bind> 태그를 사용하여 like 연산에 사용할 값을 준비한다.
+    // 
+    List<Board> boards = sqlSession.selectList("BoardMapper.select2", keyword);
 
     for (Board b : boards) {
       System.out.printf("%d,%s,%s,%s,%d\n",

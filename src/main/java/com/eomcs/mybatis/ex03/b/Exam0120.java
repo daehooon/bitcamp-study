@@ -16,7 +16,7 @@ public class Exam0120 {
     // - 단 값을 꺼낼 수 있도록 겟터(프로퍼티)가 있어야 한다.
     // 
     Board board = new Board();
-    board.setTitle("제목입니다.");
+    board.setTitle("제목입니다");
     board.setContent("내용입니다.");
 
     // insert 문을 실행할 때는 insert() 메서드를 호출한다.
