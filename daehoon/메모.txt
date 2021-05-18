@@ -1,0 +1,8 @@
+<sql1>
+order by 가격순, 등록일순, ···
+
+LearningList 정렬기능 만들기
+
+state로 삭제된 체험학습인지 확인
+
+개설자 확인
