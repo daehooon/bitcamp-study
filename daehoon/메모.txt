@@ -1,4 +1,9 @@
 <sql1>
+
+ddl.sql, 가데이터 넣기
+
+delete 핸들러
+
 order by 가격순, 등록일순, ···
 
 LearningList 정렬기능 만들기
