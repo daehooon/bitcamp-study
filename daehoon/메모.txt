@@ -1,6 +1,6 @@
 <sql1>
 
-집컴에 ddl.sql, 가데이터 넣기
+detail.jsp - 삭제버튼 고치기
 
 order by 가격순, 등록일순, ···
 LearningList 정렬기능 만들기
