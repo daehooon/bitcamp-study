@@ -53,14 +53,14 @@ values (3, '최상급 프랑스 향료로 나만의 향수 만들기 (예약 가
 
 ---------------------------- 체험학습
 insert into har_learning (lno, sgg_no, min_head, max_head, curriculum, price, zipcode, addr, det_addr, tno, rfnd_info)
-values (1, 1, 1, 1, '진행순서1', 11100, '111-11', '경기 수원 야호대로1-11 야호아파트', '101동 1101호', 1, '환불정보1');
+values (1, 1, 1, 1, '진행순서1', 11000, '111-11', '경기 수원 야호대로1-11 야호아파트', '101동 1101호', 1, '환불정보1');
 
 insert into har_learning (lno, sgg_no, min_head, max_head, curriculum, price, zipcode, addr, det_addr, tno, rfnd_info)
-values (2, 2, 1, 2, '진행순서2', 22200, '222-22', '경기 가평 오호라대로2-22 오호라아파트', '202동 2202호', 2, '환불정보2');
+values (2, 2, 1, 2, '진행순서2', 22000, '222-22', '경기 가평 오호라대로2-22 오호라아파트', '202동 2202호', 2, '환불정보2');
 
 -- det_addr = NULL (테스트용)
 insert into har_learning (lno, sgg_no, min_head, max_head, curriculum, price, zipcode, addr, tno, rfnd_info)
-values (3, 3, 1, 3, '진행순서3', 33300, '333-33', '경기 남양주 와우대로3-33 와우주택', 3, '환불정보3');
+values (3, 3, 1, 3, '진행순서3', 33000, '333-33', '경기 남양주 와우대로3-33 와우주택', 3, '환불정보3');
 
 ---------------------------- 수업일정
 insert into har_schedule (sche_no, lno, date, stm, etm)
