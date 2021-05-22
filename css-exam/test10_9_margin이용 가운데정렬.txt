@@ -1,0 +1,10 @@
+ $ margin으로 중앙 정렬
+
+ $ 줌 아웃해도 중앙이 된다.
+
+ ex)
+ #main {
+    border: 3px solid green;
+    width: 720px;
+    margin: 0px auto;
+  }

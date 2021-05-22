@@ -1,0 +1,15 @@
+ $ 콤마(,) 사용
+     => 여러 개의 대상자를 지정할 때 콤마로 나열한다.
+
+
+
+ ex) .c1, p, img, #menu {
+    /*
+    border-width: 1px;
+    border-color: red;
+    border-style: dashed;
+    */
+    border:  red 1px dashed;
+	/* border: ; 3가지 속성을 한번에 지정한다.(':' ';' 사이 내용 순서 상관 없음)*/
+    margin: 10px;
+  }

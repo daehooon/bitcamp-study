@@ -1,0 +1,23 @@
+ $ 폰트 다루기
+    => font-family : 폰트 그룹
+       예) sans-serif(고딕체), serif(명조체), monospace(고정너비),
+           cursive(흘림체), fantasy
+    => font : 폰트 그룹에 속해 있는 폰트
+       예) sans-serif => 맑은 고딕, 돋움체, 굴림체, Arial 등
+           serif => 궁서체, 바탕체, Times 등
+           monospace => monaco, consolas, Currier New 등
+           cursive => 나눔 손글씨, 필기체 등
+		   
+ $ 가독성과 유지보수에 용이하기 위해 고정폭(어떤 알파벳이든 폭이 같다.)을 많이 사용한다.
+
+ $ naver에서 만든 D2Coding은 폭이 한글 한 자에 영어 두 자의 폭이 딱 맞아 떨어져서 한글 사용자들의 가독성과 유지보수에 좋다.
+ 
+ ex) menu {
+    font-family: '맑은 고딕', 굴림체, 'Apple SD Gothic Neo', sans-serif;
+    /* 의미
+       => 맑은 고딕 폰트를 사용하라. 없다면 다음 폰트 사용하라.
+       => 모두 없다면 웹브라우저에 설정된 sans-serif 기본 폰트를 사용하라.
+     */
+  }
+  
+ $ 운영체제마다 폰트의 유무가 달라 여러개의 폰트를 설정한다. 웹 브라우저의 설정창에 가면 각 폰트 그룹별 기본 폰트가 지정되어있다.

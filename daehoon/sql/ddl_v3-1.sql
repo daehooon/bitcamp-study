@@ -1,7 +1,6 @@
--- 버전3
+-- 버전3-1
 -- ddl, 고정데이터 insert
 
--- ddl
 -- 광역시도
 DROP TABLE IF EXISTS `har_sido` RESTRICT;
 
@@ -185,6 +184,9 @@ ALTER TABLE `har_recomment`
   ADD CONSTRAINT `CK_har_recomment` -- 대댓글 체크 제약
     CHECK (recom_stat = 0 or recom_stat = 1);
 
+ALTER TABLE `har_recomment`
+  MODIFY COLUMN `recom_no` INTEGER NOT NULL AUTO_INCREMENT COMMENT '대댓글번호';
+
 -- 대댓글좋아요
 CREATE TABLE `har_recom_like` (
   `recom_no` INTEGER NOT NULL COMMENT '대댓글번호', -- 대댓글번호
@@ -317,6 +319,12 @@ ALTER TABLE `har_prrv`
 ALTER TABLE `har_prrv`
   ADD CONSTRAINT `CK_har_prrv` -- 상품구매후기 체크 제약
     CHECK (rate >= 1 and rate <= 5 and (rate*10)%5=0);
+
+-- 상품구매후기 유니크 인덱스
+CREATE UNIQUE INDEX `UIX_har_prrv`
+  ON `har_prrv` ( -- 상품구매후기
+    `purc_no` ASC -- 상품옵션구매번호
+  );
 
 -- 상품장바구니
 CREATE TABLE `har_pr_cart` (
@@ -1485,7 +1493,7 @@ ALTER TABLE `har_member`
     REFERENCES `har_mrank` ( -- 회원등급
       `mrno` -- 회원등급번호
     );
-
+    
 -- 고정 데이터 삽입 sql
 -- 회원등급
 insert into har_mrank (mrno, mem_rank)

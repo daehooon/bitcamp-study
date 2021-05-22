@@ -1,0 +1,23 @@
+ $ 테두리 다루기
+
+ ex) #menu {
+    border-style: solid;
+    border-width: 1px;
+    border-color: red;
+  }
+  
+ ex) #footer { /* border의 style, width, color를 한 번에 지정할 수 있다*/
+    border: red solid 4px; /* 값을 지정하는 순서는 상관없다.*/
+  }
+
+ ex) #content {
+    border-top-width: 2px;
+    border-top-style: dotted;
+    border-top-color: blue;
+    border-bottom: dashed 4px orange;
+    border-left: solid 6px green;
+    border-right: red dotted 40px;
+  }
+
+ $ 4개의 border-[보더속성] 따로 지정할 때 순서 12시부터 시계 방향
+ $ border: red solid 4px, blue dotted 3px; <= 이런건 없다.(border:를 쓰면 전체 적용 밖에 안됨)

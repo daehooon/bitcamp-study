@@ -1,0 +1,4 @@
+ $ 한 번에 배경을 설정하기(background)
+    => 배경색 | 배경그림 | 배경반복 | 배경위치
+
+ ex) background: gray url('img02.png') no-repeat right center;

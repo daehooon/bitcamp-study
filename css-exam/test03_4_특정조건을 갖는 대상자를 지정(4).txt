@@ -1,0 +1,14 @@
+ $ 특정 조건을 갖는 대상자를 지정하기 4
+     => 대상자를 지정할 때 조건을 나열할 수 있다.
+     => 문법
+        대상자:상태명 {...}
+
+/* 자식들 중에서 첫째인 li */
+ ex) li:first-child { 
+    background-color: gray;
+  }
+
+/* 마우스 커서가 올려져 있는 li */
+ ex) li:hover { 
+    text-decoration: underline;
+  }

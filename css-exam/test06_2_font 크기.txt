@@ -1,0 +1,13 @@
+ $ 폰트 크기
+    => font-size
+       미리 정의된 값: xx-small, x-small, small, medium, large, x-large, xx-large
+       숫자로 값(폰트의 높이)을 지정할 수 있다. 예) 20px
+       보통 small을 많이 사용한다.
+
+ $ 실무에서는 유지보수를 쉽게 하기 위해 
+       body 태그에 설정한 기본 폰트 크기를 기준으로 비율로 지정한다.
+	ex) font-size: 1.2em;
+	ex) font-size: 120%;
+	위 두 개 예제가 같은 배율을 의미
+
+ $ font-size의 default는 medium이지만 보통 small을 많이 쓴다.

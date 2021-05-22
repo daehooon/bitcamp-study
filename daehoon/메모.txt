@@ -1,11 +1,41 @@
 메모
 
+add, update, count(구매, 후기, 문의), 정렬 - view 만들기
+
 <sql1>
-order by 가격순, 등록일순, ···
+order by 신청순(default), 후기순, 가격 높(낮)은순, 등록일순
 LearningList 정렬기능 만들기
 
-에러 처리
+list.jsp에 후기, 문의 개수 출력
 
-learning detail에서 해당 개설자인지 확인 (필터 추가)
+[보류]
+ - jsp에서 loginUser.rank값 상수 설정 후 기입
+ - 에러 페이지 UI 및 Refresh 처리
 
-learning detail, list(완료? 확인) 에서 튜터 프로필사진 출력
+create view har_vi_lrnrv as
+select
+   p.pno,
+   p.content,
+   p.wdttm,
+   p.view_cnt,
+   p.pstat,
+   lrv.title,
+   lrv.rate,
+   lrv.lrn_appl_no,
+   sc.sche_no,
+   sc.lno,
+   sc.date,
+   sc.etm,
+   s.sname,
+   s.avg_rate,
+   s.sstat,
+   m.mno,
+   m.name,
+   m.nickname,
+   m.profile_pic,
+   m.mstat,
+   (select count(*) from har_lrnrv_rcm rc where rc.pno = p.pno) rcm_cnt
+from
+   har_post p, har_lrnrv lrv, har_lrn_appl ap, har_schedule sc, har_service s, har_member m
+where
+   p.pno = lrv.pno and lrv.lrn_appl_no = ap.lrn_appl_no and ap.sche_no = sc.sche_no and sc.lno = s.sno and ap.mno = m.mno;

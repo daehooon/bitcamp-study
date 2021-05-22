@@ -1,0 +1,9 @@
+ $ 배경 위치 조정(background-position)
+    => left/right top/bottom
+	- 두 값의 위치가 바뀌어도 상관 없음(아래 두 예 동일)
+	ex) background-position: top right;
+	ex) background-position: right top;
+    => left top을 기준으로 위치 이동
+       -50px(왼쪽으로 50px 이동) 100px(아래로 100px 이동)
+ 
+    => background-position: center center; 는 center를 하나만 써도 된다.

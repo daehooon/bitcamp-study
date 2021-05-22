@@ -1,0 +1,10 @@
+ $ 특정 대상자 다음에 오는 태그를 지정하기
+     => 특정 대상자를 바로 위의 형으로 갖는 경우.
+     => 문법
+        형 + 다음동생대상자 {...}
+
+ ex) img + ul {
+    border-width: 1px;
+    border-color: red;
+    border-style: dashed;
+  }

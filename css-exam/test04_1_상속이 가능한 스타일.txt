@@ -1,0 +1,26 @@
+ $ 상속이 가능한 스타일
+    => 스타일 중에서 자손 태그로 값을 자동으로 상속하는 것이 있다.
+       예) 폰트, 색상 등
+    => 지정된 태그에 대해서만 스타일이 적용되는 것이 있다.
+       예) 테두리, 패딩, 마진 등
+
+ ex) body {
+    color: blue;
+  }
+
+ ex)   #menu {
+    border: 3px solid navy;
+  }
+
+ ex)   #menu ul {
+    border: 3px solid navy;
+  }
+
+ ex)   #menu a {
+    border: 3px solid navy;
+  }
+
+공식 사이트 Specification Definition에서 찾아봐야한다.
+
+참고 CSS2.1 공식 Spec Definition
+https://www.w3.org/TR/CSS2/

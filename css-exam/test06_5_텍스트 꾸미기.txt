@@ -1,0 +1,5 @@
+ $ 텍스트 꾸미기
+    => text-decoration
+    => text-align
+
+ $ text-decoration: blink;는 요새 먹히지 않는다.

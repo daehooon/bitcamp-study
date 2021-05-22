@@ -1,0 +1,6 @@
+ ex) .c2, #footer, h1, p, li:hover {
+    border-width: 1px;
+    border-color: red;
+    border-style: dashed;
+    margin: 10px;
+  }

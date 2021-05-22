@@ -1,0 +1,13 @@
+ $ 특정 조건을 갖는 대상자를 지정하기 2
+     => 대상자를 지정할 때 조건을 나열할 수 있다.
+     => 문법
+        대상자[속성명] {...}
+
+ ex) input[type="text"] {
+    background-color: yellow;
+  }
+
+  /* selected 속성의 값에 상관없이 해당 속성이 있는 경우*/
+ ex) input[value][type="text"] { 
+    border: 3px solid red;
+  }

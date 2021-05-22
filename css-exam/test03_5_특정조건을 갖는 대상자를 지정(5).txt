@@ -1,0 +1,19 @@
+ $ 특정 조건을 갖는 대상자를 지정하기 5
+     => 대상자를 지정할 때 조건을 나열할 수 있다.
+     => 문법
+        대상자:상태명 {...}
+
+/* 어떤 태그의 첫번째 자식인 h1일 경우 */
+ ex) h1:nth-child(1) { 
+    background-color: gray;
+  }
+
+/* 어떤 태그의 열번째 자식인 h1일 경우 */
+ ex) h1:nth-child(10) {
+    background-color: red;
+  } 
+
+/* 어떤 태그의 짝수번째 자식인 h1일 경우 */
+ ex) h1:nth-child(2n) {
+    border-left: 20px solid black;
+  } 

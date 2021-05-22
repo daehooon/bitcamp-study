@@ -1,0 +1,13 @@
+ $ 배경 색상 지정하기(background-color)
+    => 미리 정의된 상수 값: aqua, black, white, gray 등
+       예) wikipedia의 web color 참고
+    => rgb(%, %, %): rgb(100%, 0%, 0%), rgb(0%, 0%, 100%)
+    => rgb(0~255,0~255,0~255): rgb(255,0,0), rgb(0,0,255)
+	- %는 100레벨이므로 레벨이 255까지 있는 24bit 표현법이 더욱 정교하다.
+    => #RRGGBB : #FF0000(=#ff0000), #0000FF(=#0000ff)
+	- 실무에서 가장 많이 사용
+    => #F56 : #FF5566의 단축 표현법
+
+ $ background-color Default는 투명이다.
+
+ 색상 참고 https://en.wikipedia.org/wiki/Web_colors

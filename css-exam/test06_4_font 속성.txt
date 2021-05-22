@@ -1,0 +1,9 @@
+ $ 폰트 기타 속성
+    => font-weight
+       폰트의 두께 지정
+    => font-style
+       폰트의 모양 지정. 예) italic, normal, oblique
+
+ $ 보통 font-weight은 normal로 사용한다.
+
+ $ D2Coding 같은 italic이 없는데 oblique가 폰트의 italic체가 없을 때 강제로 기울인다. 하지만 요새는 italic으로 해도 강제 조정이(폰트가 italic체를 가지고 있지 않아도) 다 되기 때문에 oblique를 사용하지 않는다.

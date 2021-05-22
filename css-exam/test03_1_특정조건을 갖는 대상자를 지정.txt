@@ -1,0 +1,20 @@
+ $ 특정 조건을 갖는 대상자를 지정하기
+     => 대상자를 지정할 때 조건을 나열할 수 있다.
+     => 문법
+        대상자#아이디 {...}
+        대상자.분류명 {...}
+
+ ex) div#content {
+    border-width: 1px;
+    border-color: red;
+    border-style: dashed;
+    margin: 10px;
+  }
+
+ ex) ul.c1.c2 {
+    background-color: yellow;
+  }
+
+ ex) div#menu li.c2 {
+    display: none;
+  }
