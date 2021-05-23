@@ -6,7 +6,7 @@ add, update, count(구매, 후기, 문의), 정렬 - view 만들기
 order by 신청순(default), 후기순, 가격 높(낮)은순, 등록일순
 LearningList 정렬기능 만들기
 
-list.jsp에 후기, 문의 개수 출력
+detail.jsp에 후기, 문의 개수 출력
 
 [보류]
  - jsp에서 loginUser.rank값 상수 설정 후 기입
