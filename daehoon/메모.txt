@@ -1,5 +1,14 @@
 메모
 
+LearningAdd 개설자 정보 받기
+form - 스케줄 정보 받기
+
+NarrowCategory
+Sigungu
+도메인 - 번호
+매퍼 - join
+필요없으면 지우기
+
 add, update, count(구매, 후기, 문의), 정렬 - view 만들기
 
 <sql1>
