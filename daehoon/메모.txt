@@ -48,3 +48,10 @@ from
    har_post p, har_lrnrv lrv, har_lrn_appl ap, har_schedule sc, har_service s, har_member m
 where
    p.pno = lrv.pno and lrv.lrn_appl_no = ap.lrn_appl_no and ap.sche_no = sc.sche_no and sc.lno = s.sno and ap.mno = m.mno;
+
+
+har_service 먼저 insert
+-> sno 찾아서 har_learning insert
+(addHandler - doGet에서 찾기?)
+
+js - ex04 -10-7 ~ 복습
