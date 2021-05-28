@@ -1,17 +1,18 @@
 메모
 
-LearningMapper 수정 (insert, insertSchedules)
+LearningUpdateHandler, detail.jsp 수정
 
-LearningAdd 개설자 정보 받기
-form - 스케줄 정보 받기
+LearningAddHandler 스케줄 여러개 받기
 
-NarrowCategory
-Sigungu
-도메인 - 번호
-매퍼 - join
-필요없으면 지우기
+add 1, 2, 3
 
-add, update, count(구매, 후기, 문의), 정렬 - view 만들기
+schedule 테이블에 같은 값 입력시 안들어감 (유니크 설정때문에)
+
+form - 스케줄 time 형변환 수정
+
+대분류, 소분류 JavaScript 적용
+
+count(구매, 후기, 문의), 정렬 - view 만들기
 
 <sql1>
 order by 신청순(default), 후기순, 가격 높(낮)은순, 등록일순
@@ -22,7 +23,9 @@ detail.jsp에 후기, 문의 개수 출력
 [보류]
  - jsp에서 loginUser.rank값 상수 설정 후 기입
  - 에러 페이지 UI 및 Refresh 처리
+ - add 후 detail로 redirect
 
+[LearningReview View 테이블]
 create view har_vi_lrnrv as
 select
    p.pno,
