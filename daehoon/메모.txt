@@ -1,14 +1,13 @@
 메모
 
-LearningUpdateHandler, detail.jsp 수정
+detail.jsp 스케줄 출력
+자바스크립트 반복문
 
 LearningAddHandler 스케줄 여러개 받기
 
 add 1, 2, 3
 
 schedule 테이블에 같은 값 입력시 안들어감 (유니크 설정때문에)
-
-form - 스케줄 time 형변환 수정
 
 대분류, 소분류 JavaScript 적용
 
