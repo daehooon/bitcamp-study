@@ -19,6 +19,8 @@ LearningList 정렬기능 만들기
 
 detail.jsp에 후기, 문의 개수 출력
 
+service 평균평점 받기
+
 [보류]
  - jsp에서 loginUser.rank값 상수 설정 후 기입
  - 에러 페이지 UI 및 Refresh 처리

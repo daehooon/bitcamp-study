@@ -35,7 +35,7 @@ values (4, '안녕하세요2', 'test2.hwp');
 insert into har_tutor (tno, tintro, tappl)
 values (5, '안녕하세요3', 'test3.hwp');
 
----------------------------- 서비스기본정보 (avg_rate, sstat, rdttm = default)
+---------------------------- 서비스기본정보 (sstat, rdttm = default)
 insert into har_service (sno, sname, sintro, cov_img, ncat_no)
 values (1, '도예 공방 원데이 / 도자기 그릇 만들기 (예약가능)', 
 '우리에게 친숙한 소재인 흙을 통해 도예와 관련된 문화와 기술을 공유하며 다양한 작품 활동을 통해 폭넓은 창작의 세계를 경험하실 수 있습니다.',
