@@ -1,32 +1,31 @@
 메모
 
+ddl_v3-4.sql 적용하기 (집, 학원)
+
+[C]
+LearningAdd 스케줄 여러개 입력
+대분류, 소분류 JavaScript 적용
+add 1, 2, 3 나누기
+form.jsp 등록취소 버튼 만들기
+
+[R]
 detail.jsp 스케줄 출력
 자바스크립트 반복문
-
-LearningAddHandler 스케줄 여러개 받기
-
-add 1, 2, 3
-
-schedule 테이블에 같은 값 입력시 안들어감 (유니크 설정때문에)
-
-대분류, 소분류 JavaScript 적용
-
-count(구매, 후기, 문의), 정렬 - view 만들기
 
 <sql1>
 order by 신청순(default), 후기순, 가격 높(낮)은순, 등록일순
 LearningList 정렬기능 만들기
 
-detail.jsp에 후기, 문의 개수 출력
-
 service 평균평점 받기
+
+detail.jsp에 후기, 문의 개수 출력
+list.jsp에 구매 횟수 출력
 
 [보류]
  - jsp에서 loginUser.rank값 상수 설정 후 기입
  - 에러 페이지 UI 및 Refresh 처리
  - add 후 detail로 redirect
 
-[LearningReview View 테이블]
 create view har_vi_lrnrv as
 select
    p.pno,

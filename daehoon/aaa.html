@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>ex04</title>
+</head>
+<body>
+<h1>객체 - 정의</h1>
+<form>
+<select id="sido" name="sido">
+  <option value="101">서울</option>
+  <option value="102">부산</option>
+  <option value="103">대구</option>
+  <option value="104">광주</option>
+</select>
+<select id="sigungu" name="sigungu">
+  <option value="101">서울</option>
+  <option value="102">부산</option>
+  <option value="103">대구</option>
+  <option value="104">광주</option>
+</select>
+<button>전송</button>
+</form>
+<script>
+var t1 = document.querySelector("#sido");
+var t2 = document.querySelector("#sigungu");
+t1.onchange = function() {
+	var xhr = new XMLHttpRequest();
+	xhr.open("GET", "aaa.jsp?sido=" + t1.value, false);
+  xhr.send();
+  
+  t2.innerHTML = xhr.responseText;  
+}
+</script>
+</body>
+</html>
+
+
+
+
+
