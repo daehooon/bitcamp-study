@@ -1,6 +1,6 @@
 메모
 
-ddl_v3-4.sql 적용하기 (집, 학원)
+ddl_v3-4.sql 적용하기 (집)
 
 [C]
 LearningAdd 스케줄 여러개 입력
