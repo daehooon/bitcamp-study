@@ -1,12 +1,11 @@
 메모
 
-ddl_v3-4.sql 적용하기 (집)
+ddl_v3-5.sql 적용하기 (학원, 집)
 
 [C]
-LearningAdd 스케줄 여러개 입력
-대분류, 소분류 JavaScript 적용
-add 1, 2, 3 나누기
-form.jsp 등록취소 버튼 만들기
+LearningAdd 스케줄 여러개 입력 (성은님꺼 참고하기)
+
+add 페이지(1,2,3,..) 나누기
 
 [R]
 detail.jsp 스케줄 출력
@@ -20,6 +19,9 @@ service 평균평점 받기
 
 detail.jsp에 후기, 문의 개수 출력
 list.jsp에 구매 횟수 출력
+
+[U]
+기존 입력값 가져오는거 버그 처리
 
 [보류]
  - jsp에서 loginUser.rank값 상수 설정 후 기입
