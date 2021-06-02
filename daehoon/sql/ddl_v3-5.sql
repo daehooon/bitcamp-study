@@ -1,4 +1,4 @@
--- 버전3-4
+-- 버전3-5
 -- ddl, 고정데이터 insert
 
 -- 광역시도
@@ -661,8 +661,8 @@ CREATE TABLE `har_tqna` (
 	`tno`      INTEGER      NOT NULL COMMENT '튜터번호', -- 튜터번호
 	`title`    VARCHAR(255) NOT NULL COMMENT '제목', -- 제목
 	`secret`   INTEGER      NOT NULL DEFAULT 1 COMMENT '비밀글여부', -- 비밀글여부
-	`reply`    LONGTEXT     NOT NULL COMMENT '답변내용', -- 답변내용
-	`rpl_dttm` DATETIME     NOT NULL COMMENT '답변일시' -- 답변일시
+	`reply`    LONGTEXT     NULL     COMMENT '답변내용', -- 답변내용
+	`rpl_dttm` DATETIME     NULL     COMMENT '답변일시' -- 답변일시
 )
 COMMENT '튜터문의게시판';
 
