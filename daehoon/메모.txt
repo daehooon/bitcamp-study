@@ -43,7 +43,7 @@ select
    sc.date,
    sc.etm,
    s.sname,
-   s.avg_rate,
+   -- 미구현 컬럼 s.avg_rate,
    s.sstat,
    m.mno,
    m.name,
